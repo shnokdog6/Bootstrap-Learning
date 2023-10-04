@@ -1,29 +1,21 @@
 body {
     height: 100vh;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     font-family: 'Roboto', sans-serif;
 }
 
 .main {
-    padding: 40px;
+    padding: 0px;
 }
 
 .panel {
-    height: 768px;
+    height: 100vh;
     background-color: white;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     padding: 25px;
-    box-shadow: -10px -4px 15px 3px #2929296c;
 }
 
 .dialog {
-    height: 768px;
+    height: 100vh;
     background-color: rgb(238, 230, 230);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 10px 4px 15px 3px #2929296c;
 }
 
 .dialog-button {
@@ -41,7 +33,8 @@ body {
     padding-left: 20px;
 }
 
-.dialog-button:hover {
+.dialog-button:hover,
+.button:hover {
     background-color: #0d6efd;
 }
 
@@ -49,6 +42,40 @@ body {
     height: 30px;
     font-size: 24px;
     padding-right: 10px;
+}
+
+.register-panel {
+    height: 100vh;
+    background-color: white;
+    padding: 5px;
+}
+
+input {
+    height: 60px;
+    width: 300px;
+    background-color: rgb(228, 228, 228);
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    background-color: rgb(228, 228, 228);
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: black;
 }
 
 @media only screen and (max-width:991px) {
@@ -69,15 +96,6 @@ body {
     .panel {
         height: 75px;
         padding: 5px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        box-shadow: none;
-    }
-
-    .dialog {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 20px;
-        box-shadow: none;
     }
 }
 
@@ -86,9 +104,6 @@ body {
     .panel {
         height: 50px;
         padding: 5px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        box-shadow: none;
     }
 
     .dialog-icon {
@@ -102,5 +117,12 @@ body {
         height: 40px;
         border-radius: 15px;
         padding: 10px;
+    }
+
+
+    input,
+    .button {
+        width: 240px;
+        height: 60px;
     }
 }
