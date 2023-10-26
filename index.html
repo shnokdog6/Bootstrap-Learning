@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +18,7 @@
 <body>
     <div class="container-fluid">
         <div class="row align-items-center h-100 main">
-            <div class="col-lg-3 panel d-flex flex-lg-column justify-content-between">
+            <nav class="col-lg-3 panel d-flex flex-lg-column gap-2 justify-content-between">
                 <div class="d-flex flex-lg-column gap-2">
                     <button type="button" class="dialog-button">
                         <i class="fi fi-rr-circle-user dialog-icon"></i>
@@ -42,8 +43,41 @@
                         <span class="dialog-button-label">Настройки</span>
                     </button>
                 </div>
-            </div>
-            <div class="col-lg-9 dialog">
+            </nav>
+            <div class="col-lg-9 dialog-tab d-flex flex-column gap-2">
+                <div class="dialog d-flex">
+                    <img class="dialog-avatar" src="images/avatar.jpg">
+                    <div class="dialog-text d-flex flex-column">
+                        <span class="dialog-header">Акаши Сейдзиро</span>
+                        <span class="dialog-last-message">Я абсолют и вижу всё</span>
+                    </div>
+                    <div class="dialog-advanced d-flex ms-auto">
+                        <span class="dialog-last-message-time">вчера</span>
+                        <div class="dropdown">
+                            <button class="dialog-button-advanced" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fi fi-sr-menu-dots advanced-button-icon"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-custom">
+                                <li>
+                                    <button type="button" class="dropdown-item dropdown-item-first">
+                                        Закрепить
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item">
+                                        Отключить уведомления
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item dropdown-item-last">
+                                        Удалить диалог
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>

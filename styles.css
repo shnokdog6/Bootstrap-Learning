@@ -13,9 +13,11 @@ body {
     padding: 25px;
 }
 
-.dialog {
-    height: 100vh;
+.dialog-tab {
+    max-height: fit-content;
+    min-height: 100vh;
     background-color: rgb(238, 230, 230);
+    padding: 2px;
 }
 
 .dialog-button {
@@ -36,6 +38,7 @@ body {
 .dialog-button:hover,
 .button:hover {
     background-color: #0d6efd;
+    color: white;
 }
 
 .dialog-icon {
@@ -78,6 +81,45 @@ a {
     color: black;
 }
 
+.dialog {
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.dialog-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.dialog-text {
+    min-width: 0;
+}
+
+.dialog-last-message {
+    color: #939393;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dialog-button-advanced {
+    color: black;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.advanced-button-icon {
+    font-size: 20px;
+}
+
 @media only screen and (max-width:991px) {
 
 
@@ -97,6 +139,39 @@ a {
         height: 75px;
         padding: 5px;
     }
+
+    .dialog {
+        font-size: 10px;
+    }
+
+    .dialog-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .advanced-button-icon {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        padding: 0;
+        font-size: 10px;
+        min-width: fit-content;
+    }
+
+
+
+    .dropdown-item-first {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+
+    .dropdown-item-last {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
 }
 
 @media only screen and (max-width:328px) {
@@ -124,5 +199,35 @@ a {
     .button {
         width: 240px;
         height: 60px;
+    }
+
+    .dialog {
+        font-size: 10px;
+    }
+
+    .dialog-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        padding: 0;
+        font-size: 4px;
+        min-width: fit-content;
+        border-width: 0.5px;
+    }
+
+    .dropdown-item {
+        padding: 4px;
+    }
+
+    .dropdown-item-first {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+
+    .dropdown-item-last {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
     }
 }
